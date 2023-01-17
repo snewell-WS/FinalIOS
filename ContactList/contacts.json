@@ -1,0 +1,60 @@
+{
+    "status":"OK",
+    "contacts":[
+        {
+            "name": "Bill Smith",
+            "phoneNumber": "5555559801",
+            "email": "bill@gmail.com",
+            "birthday": "1980-06-16T15:12:45Z",
+            "address": null
+            
+        },
+        {
+            "name": "Amy Brooks",
+            "phoneNumber": "5555550921",
+            "email": "amy@gmail.com",
+            "birthday": "1995-01-25T15:12:45Z",
+            "address": "9004 West Lake Ave"
+        },
+        {
+            "name": "Peter Davidson",
+            "phoneNumber": "8115557539",
+            "email": "peter@gmail.com",
+            "birthday": "1975-04-22T15:12:45Z",
+            "address": null
+            
+        },
+        {
+            "name": "Quinton Martin",
+            "phoneNumber": "2345559009",
+            "email": "bill@gmail.com",
+            "birthday": "1980-06-16T15:12:45Z",
+            "address": "2003 S Drive"
+            
+        },
+        {
+            "name": "Bill Smith",
+            "phoneNumber": "1265558907",
+            "email": "bill@gmail.com",
+            "birthday": "1984-06-16T15:12:45Z",
+            "address": null
+            
+        },
+        {
+            "name": "George Smith",
+            "phoneNumber": "9845556732",
+            "email": "George@gmail.com",
+            "birthday": "1989-06-16T15:12:45Z",
+            "address": null
+            
+        },
+        {
+            "name": "Elizabeth Winterson",
+            "phoneNumber": "3215556321",
+            "email": "elizabeth@gmail.com",
+            "birthday": "1995-08-26T15:12:45Z",
+            "address": "East Brodway St"
+            
+        },
+    ]
+}

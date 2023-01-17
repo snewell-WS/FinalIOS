@@ -14,6 +14,18 @@
 		0332425229416CED0055715C /* ContactListTests.swift in Sources */ = {isa = PBXBuildFile; fileRef = 0332425129416CED0055715C /* ContactListTests.swift */; };
 		0332425C29416CED0055715C /* ContactListUITests.swift in Sources */ = {isa = PBXBuildFile; fileRef = 0332425B29416CED0055715C /* ContactListUITests.swift */; };
 		0332425E29416CED0055715C /* ContactListUITestsLaunchTests.swift in Sources */ = {isa = PBXBuildFile; fileRef = 0332425D29416CED0055715C /* ContactListUITestsLaunchTests.swift */; };
+		0332426B29416D130055715C /* contacts.json in Resources */ = {isa = PBXBuildFile; fileRef = 0332426A29416D130055715C /* contacts.json */; };
+		0332426D29416D250055715C /* contactListCell.swift in Sources */ = {isa = PBXBuildFile; fileRef = 0332426C29416D250055715C /* contactListCell.swift */; };
+		0332426F29416D530055715C /* contactDetailedView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 0332426E29416D530055715C /* contactDetailedView.swift */; };
+		0332427129416D740055715C /* contactLoader.swift in Sources */ = {isa = PBXBuildFile; fileRef = 0332427029416D740055715C /* contactLoader.swift */; };
+		0332427329416D840055715C /* contactDriver.swift in Sources */ = {isa = PBXBuildFile; fileRef = 0332427229416D840055715C /* contactDriver.swift */; };
+		0332427D2944A8FB0055715C /* ErrorView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 0332427C2944A8FB0055715C /* ErrorView.swift */; };
+		0332428529457EB40055715C /* ImageAttributes.txt in Resources */ = {isa = PBXBuildFile; fileRef = 0332427F29457EB40055715C /* ImageAttributes.txt */; };
+		0332428629457EB40055715C /* mail.png in Resources */ = {isa = PBXBuildFile; fileRef = 0332428029457EB40055715C /* mail.png */; };
+		0332428729457EB40055715C /* birthday-cake.png in Resources */ = {isa = PBXBuildFile; fileRef = 0332428129457EB40055715C /* birthday-cake.png */; };
+		0332428829457EB40055715C /* address.png in Resources */ = {isa = PBXBuildFile; fileRef = 0332428229457EB40055715C /* address.png */; };
+		0332428929457EB40055715C /* contact.png in Resources */ = {isa = PBXBuildFile; fileRef = 0332428329457EB40055715C /* contact.png */; };
+		0332428A29457EB40055715C /* phone.png in Resources */ = {isa = PBXBuildFile; fileRef = 0332428429457EB40055715C /* phone.png */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXContainerItemProxy section */
@@ -45,6 +57,18 @@
 		0332425729416CED0055715C /* ContactListUITests.xctest */ = {isa = PBXFileReference; explicitFileType = wrapper.cfbundle; includeInIndex = 0; path = ContactListUITests.xctest; sourceTree = BUILT_PRODUCTS_DIR; };
 		0332425B29416CED0055715C /* ContactListUITests.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ContactListUITests.swift; sourceTree = "<group>"; };
 		0332425D29416CED0055715C /* ContactListUITestsLaunchTests.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ContactListUITestsLaunchTests.swift; sourceTree = "<group>"; };
+		0332426A29416D130055715C /* contacts.json */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = text.json; path = contacts.json; sourceTree = "<group>"; };
+		0332426C29416D250055715C /* contactListCell.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = contactListCell.swift; sourceTree = "<group>"; };
+		0332426E29416D530055715C /* contactDetailedView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = contactDetailedView.swift; sourceTree = "<group>"; };
+		0332427029416D740055715C /* contactLoader.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = contactLoader.swift; sourceTree = "<group>"; };
+		0332427229416D840055715C /* contactDriver.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = contactDriver.swift; sourceTree = "<group>"; };
+		0332427C2944A8FB0055715C /* ErrorView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ErrorView.swift; sourceTree = "<group>"; };
+		0332427F29457EB40055715C /* ImageAttributes.txt */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = text; path = ImageAttributes.txt; sourceTree = "<group>"; };
+		0332428029457EB40055715C /* mail.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = mail.png; sourceTree = "<group>"; };
+		0332428129457EB40055715C /* birthday-cake.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = "birthday-cake.png"; sourceTree = "<group>"; };
+		0332428229457EB40055715C /* address.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = address.png; sourceTree = "<group>"; };
+		0332428329457EB40055715C /* contact.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = contact.png; sourceTree = "<group>"; };
+		0332428429457EB40055715C /* phone.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = phone.png; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -95,11 +119,18 @@
 		0332423E29416CEC0055715C /* ContactList */ = {
 			isa = PBXGroup;
 			children = (
+				0332427E29457EB40055715C /* assetsFinal */,
 				0332423F29416CEC0055715C /* ContactListApp.swift */,
 				0332424129416CEC0055715C /* ContentView.swift */,
+				0332426C29416D250055715C /* contactListCell.swift */,
+				0332426E29416D530055715C /* contactDetailedView.swift */,
+				0332426A29416D130055715C /* contacts.json */,
+				0332427C2944A8FB0055715C /* ErrorView.swift */,
 				0332424329416CED0055715C /* Assets.xcassets */,
 				0332424529416CED0055715C /* ContactList.entitlements */,
 				0332424629416CED0055715C /* Preview Content */,
+				0332427029416D740055715C /* contactLoader.swift */,
+				0332427229416D840055715C /* contactDriver.swift */,
 			);
 			path = ContactList;
 			sourceTree = "<group>";
@@ -127,6 +158,19 @@
 				0332425D29416CED0055715C /* ContactListUITestsLaunchTests.swift */,
 			);
 			path = ContactListUITests;
+			sourceTree = "<group>";
+		};
+		0332427E29457EB40055715C /* assetsFinal */ = {
+			isa = PBXGroup;
+			children = (
+				0332427F29457EB40055715C /* ImageAttributes.txt */,
+				0332428029457EB40055715C /* mail.png */,
+				0332428129457EB40055715C /* birthday-cake.png */,
+				0332428229457EB40055715C /* address.png */,
+				0332428329457EB40055715C /* contact.png */,
+				0332428429457EB40055715C /* phone.png */,
+			);
+			path = assetsFinal;
 			sourceTree = "<group>";
 		};
 /* End PBXGroup section */
@@ -233,8 +277,15 @@
 			isa = PBXResourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				0332428729457EB40055715C /* birthday-cake.png in Resources */,
 				0332424829416CED0055715C /* Preview Assets.xcassets in Resources */,
+				0332428929457EB40055715C /* contact.png in Resources */,
+				0332428829457EB40055715C /* address.png in Resources */,
+				0332428629457EB40055715C /* mail.png in Resources */,
+				0332428A29457EB40055715C /* phone.png in Resources */,
+				0332426B29416D130055715C /* contacts.json in Resources */,
 				0332424429416CED0055715C /* Assets.xcassets in Resources */,
+				0332428529457EB40055715C /* ImageAttributes.txt in Resources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
@@ -260,7 +311,12 @@
 			buildActionMask = 2147483647;
 			files = (
 				0332424229416CEC0055715C /* ContentView.swift in Sources */,
+				0332427129416D740055715C /* contactLoader.swift in Sources */,
 				0332424029416CEC0055715C /* ContactListApp.swift in Sources */,
+				0332426D29416D250055715C /* contactListCell.swift in Sources */,
+				0332427D2944A8FB0055715C /* ErrorView.swift in Sources */,
+				0332427329416D840055715C /* contactDriver.swift in Sources */,
+				0332426F29416D530055715C /* contactDetailedView.swift in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};

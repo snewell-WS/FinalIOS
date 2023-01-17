@@ -7,15 +7,44 @@
 
 import SwiftUI
 
+
+
+
+
 struct ContentView: View {
+    
+    var contactInfo: Contacts?
+    let jsonFile = "contacts"
+
+    let dateFormatter = DateFormatter()
+
+    init(){
+        dateFormatter.dateStyle = .medium
+        self.contactInfo = contactLoader.load(jsonFileName: jsonFile)
+    }
+    
+    
+    
+    
+    
     var body: some View {
-        VStack {
-            Image(systemName: "globe")
-                .imageScale(.large)
-                .foregroundColor(.accentColor)
-            Text("Hello, world!")
+        guard let contactInfo = self.contactInfo else {
+            return AnyView(ErrorView(message: "Contact data is unavailable."))
         }
-        .padding()
+        
+        return AnyView(buildList(contactInfo: contactInfo.contacts))
+    }
+    
+    func buildList(contactInfo: [Contact]) -> some View
+    {
+        return NavigationView(){
+            List(contactInfo){
+                contactInfo in
+                NavigationLink(destination: contactDetailedView(contact: contactInfo)){
+                    contactListCell(contact: contactInfo)
+                }
+            }.navigationBarTitle("Contacts")
+        }
     }
 }
 
